@@ -7,15 +7,13 @@ body {
 
 footer {
     margin-top: auto;
-    background-color: black;
+    background-color: #0E0E0E;
     color: white;
 }
 
 
 .upperfoot {
-    color: white;
-background-color: black;
-  
+    color: white;  
     display: flex;
     justify-content: space-around;
     
@@ -46,4 +44,15 @@ background-color: black;
 
 
 
+}
+.background-footer{
+    display: flex;
+    justify-self: center;
+    width: 500px;
+    height: 200px;
+    top: 0%;
+    bottom: 0%;
+}
+.btn{
+    background-color:#FFE14D ;
 }
