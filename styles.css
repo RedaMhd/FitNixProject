@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 footer {
@@ -55,4 +56,21 @@ footer {
 }
 .btn{
     background-color:#FFE14D ;
+
+}
+
+.nav-links a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 17px;
+      list-style: none;
+    }
+
+    .nav-links a:hover {
+      color: #ffe14d;
+    }
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
