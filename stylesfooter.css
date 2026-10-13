@@ -68,6 +68,29 @@ footer {
     top: 0%;
     bottom: 0%;
 }
+.btn {
+      background:white;
+      color: #111;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px 28px;
+      border-radius: 1px;
+      text-decoration: none;
+      font-family: "Bebas Neue",sans-serif;
+      
+
+      cursor: pointer;
+      transition:0.3s;
+
+    }
+
+    .btn:hover {
+      transform: scale(1.05)
+    }
+     @media (max-width: 900px) {
+      .navbar { padding: 20px 24px; }
+      .nav-links { display: none; }
+    }
 .lowerbtn{
     background-color:#FFE14D ;
    
@@ -102,3 +125,29 @@ footer input{
     border-radius: 10px;
 }
 
+.saying {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 84px;
+            line-height: .95;
+            color: #f5f5f5;
+            margin-bottom: 28px;
+            max-width: 420px;
+        }
+
+description{
+font-family: 10px;
+}
+.aboutus-pic{
+    width: 460px;
+    height: 542px;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.layout{
+    display: flex;
+    justify-content: space-between;
+}

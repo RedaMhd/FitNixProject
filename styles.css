@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -54,9 +55,9 @@ footer {
     top: 0%;
     bottom: 0%;
 }
-.btn{
+.btn , b{
+    color: #0E0E0E;
     background-color:#FFE14D ;
-   
     padding: 12px;
     border-radius: 9px;
 
@@ -64,7 +65,10 @@ footer {
 
 
 }
+.btn:hover{
+    transform: scale(1.05);
 
+}
 .nav-links a {
       color: #dddddd6a;
       text-decoration: none;
@@ -85,6 +89,20 @@ footer ul , footer p {
 footer input{
     height: 40px;
     width: 280px;
+    border-color: #dddddd6a;
     border-radius: 10px;
+    background-color: #0E0E0E;
 }
 
+.program p{
+    color:#CCCCCC;
+}
+.program #titre , #time-level   {
+    color: #FFE14D;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
