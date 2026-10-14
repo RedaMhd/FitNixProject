@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez l'équipe FITNIX">
+    <title>Contact – FITNIX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="stylesfooter.css">
+    <style>
+        * {
+            box-sizing:  border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #0a0a0a;
+            color: #f3eeee;
+        }
+
+        .contact {
+
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .contact-grid {
+            width: 100%;
+            max-width: 1312px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .infos {
+            padding: 0 40px 0 81px;
+        }
+
+        .me {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            color: #ffe14d;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .me::before {
+            content: "";
+            width: 35px;
+            height: 2px;
+            background: #ffe14d;
+        }
+
+        .infos h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 84px;
+            line-height: .95;
+            color: #f5f5f5;
+            margin-bottom: 28px;
+            max-width: 420px;
+        }
+
+        .infos .intro {
+            color: #9a9a9a;
+            font-size: 20px;
+            line-height: 1.6;
+            max-width: 500px;
+            margin-bottom: 32px;
+        }
+
+        .you {
+            list-style: none;
+            display: grid;
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .you li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .you .ico {
+            color: #ffe14d;
+            font-size: 14px;
+            width: 16px;
+            text-align: center;
+        }
+
+        .map {
+            max-width: 500px;
+            border: 1px solid #2d2d2d;
+            border-radius: 2px;
+
+        }
+
+        .map iframe {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border: 0;
+
+        }
+
+        .carte {
+            background: #0e0e0e;
+            padding: 64px 44px 44px;
+            width: 100%;
+            max-width: 575px;
+            margin-left: auto;
+            margin-right: 71px;
+        }
+
+        .titre-form {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 34px;
+            color: #fff;
+            margin-bottom: 36px;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #d8d3d3;
+            display: grid;
+            gap: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            font-family: inherit;
+            font-size: 15px;
+            color: #f3eeee;
+            background: #0e0e0e;
+            border: 1px solid #2d2d2d;
+            border-radius: 2px;
+            padding: 0 20px;
+            height: 58px;
+            outline: 0;
+            transition: border-color .2s;
+        }
+
+        textarea {
+            height: 110px;
+            padding: 18px 20px;
+            resize: vertical;
+        }
+
+        select {
+            padding: 0 16px;
+            cursor: pointer;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #7d7d7d;
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover,
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #ffe14d;
+        }
+
+
+        button {
+            height: 55px;
+            border: 0;
+            border-radius: 2px;
+            background: #ffe14d;
+            color: #0a0a0a;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 20px;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background .2s;
+        }
+
+        button:hover {
+            background: #ffd400;
+        }
+
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .infos {
+                padding: 0 24px;
+            }
+
+            .infos h1 {
+                font-size: 64px;
+            }
+
+            .carte {
+                margin: 0 auto;
+                padding: 40px 24px;
+                max-width: calc(100% - 48px);
+            }
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: #ffe14d;
+            color: #111;
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+            font-style: italic;
+            font-weight: 900;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 48px;
+            list-style: none;
+            font-family: "Inter", sans-serif;
+        }
+
+        .nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav-links a:hover {
+            color: #ffe14d;
+        }
+
+
+        .btn {
+            background: white;
+            color: #111;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 12px 28px;
+            border-radius: 1px;
+            text-decoration: none;
+            font-family: "Bebas Neue", sans-serif;
+
+
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+
+        .btn:hover {
+            transform: scale(1.05)
+        }
+
+        @media (max-width: 900px) {
+            .navbar {
+                padding: 20px 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <header class="navbar">
+            <a href="about.html" class="logo">
+                <span class="logo-icon">F</span>FitNix</a>
+
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="program.html">Programs</a></li>
+                <li><a href="Trainers.html">Trainers</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="Testimonials.html">Testimonials</a></li>
+            </ul>
+
+            <a href="contact.html" class="btn">Contact Us</a>
+        </header>
+
+</body>
+
+</header>
+<main class="contact" id="contact">
+    <div class="contact-grid">
+
+        <div class="infos">
+            <p class="me">Contactez-nous</p>
+            <h1>Une question ?<br>Écrivez-nous</h1>
+            <p class="intro">Notre équipe vous répond sous 24 h ouvrées.</p>
+
+            <ul class="you">
+                <li><span class="ico">⚲</span> 128 Iron Street, Downtown</li>
+                <li><span class="ico">◉</span> +1 (555) 014-2290</li>
+                <li><span class="ico">✉</span> hello@fitnix.com</li>
+            </ul>
+
+
+            <div class="map">
+                <iframe title="Localisation de FITNIX" loading="lazy"
+                    src="https://maps.google.com/maps?q=32.2645962,-9.2372633&z=16&output=embed"></iframe>
+            </div>
+        </div>
+
+        <section class="carte">
+            <h2 class="titre-form">Envoyez-nous un message</h2>
+
+            <form action="#" method="post">
+                <label>Nom complet
+                    <input type="text" name="nom" placeholder="Prénom Nom" required minlength="2">
+                </label>
+
+                <label>Adresse e-mail
+                    <input type="email" name="email" placeholder="vous@exemple.com" required>
+                </label>
+
+                <label>Sujet du message
+                    <select name="sujet" required>
+                        <option value="" disabled selected>Choisissez un sujet</option>
+                        <option>Essai gratuit</option>
+                        <option>Abonnements et tarifs</option>
+                        <option>Coaching</option>
+                        <option>Autre</option>
+                    </select>
+                </label>
+
+                <label>Message
+                    <textarea name="message" placeholder="Votre message" required minlength="10"></textarea>
+                </label>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </div>
+</main>
+</body>
+<footer>
+
+        <div class="upperfoot">
+            <section>
+
+                <div class="logo">
+                    <img src="Images/logo.png" alt="logo picture " class="logoicone">
+                    <h2>FitNix</h2>
+                </div>
+
+                <p>Science-backed training, <br>expert coaching and a community <br>that never lets you quit.</p>
+                
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Programs</li>
+                    <li><a href="Trainers.html">Trainers</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hours</h3>
+                <ul>
+                    <li>Mon–Fri · 6am–10pm</li>
+                    <li>Saturday · 7am–9pm</li>
+                    <li>Sunday · 8am–8pm</li>
+                    <li style="color: #FFE14D;">24/7 for Pro & Elite</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <p>Weekly workouts, recipes and member
+                    offers.</p>
+                <input type="email" placeholder="Your email">
+                <button class="lowerbtn">
+                    <b>JOIN</b>
+                </button>
+            </section>
+        </div>
+
+        <img src="Images/fitnix.png" alt="background-footer " class="background-footer">
+
+        <section class="foot">
+            <p>© 2026 FitNix. All rights reserved.</p>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookies</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+
+</html>
