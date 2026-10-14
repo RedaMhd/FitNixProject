@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FitNix</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesfooter.css">
+
   <style>
     * {
       margin: 0;
@@ -14,96 +16,49 @@
     }
 
     body {
-      
+
       background: #0d0d0d;
       color: #fff;
     }
 
-    .navbar {
+    .header-navbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 28px 64px;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 28px;
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-      font-family: "Bebas Neue", sans-serif;
-      font-weight: 400;
-    }
 
-    .logo-icon {
-      width: 38px;
-      height: 38px;
-      background: #ffe14d;
-      color: #111;
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      font-style: italic;
-      font-weight: 900;
-    }
 
-    .nav-links {
+
+    .header-nav-links {
       display: flex;
       gap: 48px;
       list-style: none;
       font-family: "Inter", sans-serif;
     }
 
-    .nav-links a {
+    .header-nav-links a {
       color: #ddd;
       text-decoration: none;
       font-size: 17px;
     }
 
-    .nav-links a:hover {
+    .header-nav-links a:hover {
       color: #ffe14d;
     }
-
-
-    .btn {
-      background:white;
-      color: #111;
-      font-weight: 700;
-      font-size: 16px;
-      padding: 12px 28px;
-      border-radius: 1px;
-      text-decoration: none;
-      font-family: "Bebas Neue",sans-serif;
-      
-
-      cursor: pointer;
-      transition:0.3s;
-
-    }
-
-    .btn:hover {
-      transform: scale(1.05)
-    }
-     @media (max-width: 900px) {
-      .navbar { padding: 20px 24px; }
-      .nav-links { display: none; }
-    }
-
-
-    
   </style>
-</head>
 
 <body>
+  </head>
 
-  <header class="navbar">
+
+
+  <header class="header-navbar">
     <a href="about.html" class="logo">
-      <span class="logo-icon">F</span>FitNix</a>
+      <span class="logoicone">F</span>FitNix</a>
 
-    <ul class="nav-links">
+    <ul class="header-nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="program.html">Programs</a></li>
       <li><a href="Trainers.html">Trainers</a></li>
@@ -113,7 +68,5 @@
 
     <a href="contact.html" class="btn">Contact Us</a>
   </header>
-
 </body>
-
 </html>
