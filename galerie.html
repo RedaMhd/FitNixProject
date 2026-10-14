@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <style>
+        body {}
+
+        .teamphoto {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .teamphoto img {
+            width: calc(25% - 15px);
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .textleft {
+            left: 1100px;
+            position: absolute;
+            top: 70px;
+            font-size: 15px
+        }
+
+        body {
+            margin: 50px;
+        }
+
+        h2 {
+            position: absolute;
+            top: 600px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p>— GALERIE</p>
+            <h1>NOTRE GALERIE</h1>
+        </div>
+        <p class="textleft"> Découvrez nos espaces, équipements, activités
+            et l’ambiance qui font d’Élan Fitness bien
+            plus qu’une simple salle de sport.</p>
+        <div class="teamphoto">
+
+            <img src="Images/salle1.jpg" alt="Salle de musculation bleue">
+
+            <img src="Images/salle2.jpg" alt="Espace de musculation">
+
+            <img src="Images/salle5.jpg" alt="Compléments alimentaires sportifs">
+
+            <img src="Images/salle3.jpg" alt="Machines de musculation rouges">
+
+            <img src="Images/salle4.jpg" alt="Produits de nutrition sportive">
+        </div>
+
+    </section>
+
+</body>
+
+</html>

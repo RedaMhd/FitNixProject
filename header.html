@@ -1,72 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FitNix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesfooter.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNix</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesfooter.css">
 
-    body {
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      background: #0d0d0d;
-      color: #fff;
-    }
+        body {
+            background: #0d0d0d;
+            color: #fff;
+            font-family: "Inter", sans-serif;
+        }
 
-    .header-navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 28px 64px;
-    }
+        .header-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+        }
 
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
 
+        .logoicone {
+            color: #100f0f;
+        }
 
+        .header-nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
 
-    .header-nav-links {
-      display: flex;
-      gap: 48px;
-      list-style: none;
-      font-family: "Inter", sans-serif;
-    }
+        .header-nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-    .header-nav-links a {
-      color: #ddd;
-      text-decoration: none;
-      font-size: 17px;
-    }
+        .header-nav-links a:hover {
+            color: #ffe14d;
+        }
 
-    .header-nav-links a:hover {
-      color: #ffe14d;
-    }
-  </style>
+        .btn {
+            background: #ffe14d;
+            color: #0d0d0d;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* Tablette */
+        @media (max-width: 1024px) {
+            .header-navbar {
+                padding: 24px;
+            }
+
+            .header-nav-links {
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+        }
+
+        /* Téléphone */
+        @media (max-width: 767px) {
+            .header-navbar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header-nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 
 <body>
-  </head>
 
+    <header class="header-navbar">
 
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
 
-  <header class="header-navbar">
-    <a href="about.html" class="logo">
-      <span class="logoicone">F</span>FitNix</a>
+        <ul class="header-nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
 
-    <ul class="header-nav-links">
-      <li><a href="about.html">About</a></li>
-      <li><a href="program.html">Programs</a></li>
-      <li><a href="Trainers.html">Trainers</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="Testimonials.html">Testimonials</a></li>
-    </ul>
+        <a href="contact.html" class="btn">Contact Us</a>
 
-    <a href="contact.html" class="btn">Contact Us</a>
-  </header>
+    </header>
+
 </body>
 </html>
