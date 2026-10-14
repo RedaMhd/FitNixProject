@@ -13,52 +13,66 @@
             margin: 0;
             color: white;
         }
-        body{
+
+        
+
+        body {
+            font-family: "Inter", sans-serif;
             background-image: url(images/a1aa074e768b45546adb542b3ac6f2774f956a4c.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
         }
+
         .main {
-            
+
             display: flex;
             justify-content: space-between;
             gap: 20vh;
             margin: 10px;
         }
-        #sidbor{
+
+        #sidbor {
             padding-left: 5px;
             border-left: 1px solid white;
         }
-        .experience{
+
+        .experience {
             margin-top: 5%;
-            
+
         }
-        .experience h1{
+
+        .experience h1 {
             color: gold;
         }
-        .motivationSection{
+
+        .motivationSection {
             transform: translate(0, 10vh);
         }
-        .motivationSection > div{
+
+        .motivationSection>div {
             display: flex;
             margin-top: 50px;
         }
-        #star{
+
+        #star {
             color: gold;
         }
-        #motivation{
+
+        #motivation {
             width: 85%;
             text-transform: uppercase;
             color: white;
             height: auto;
             font-size: 100px;
         }
-        #motivation>span{
+
+        #motivation>span {
             color: gold;
         }
-        .beltSection{
+
+        .beltSection {
             margin-top: 20px;
         }
 
@@ -67,7 +81,8 @@
             font-size: 20px;
             width: 70%;
         }
-        .joinSection > button{
+
+        .joinSection>button {
             margin: 10px 0 0 0;
             color: black;
             background-color: gold;
@@ -87,26 +102,128 @@
             border: 1px solid white;
             border-radius: 50%;
         }
-        .imagRounded{
+
+        .imagRounded {
             margin: 4% 5% 0;
             padding-left: 10px;
             border-left: 1px solid white;
         }
-        .imagRounded >p >span{
+
+        .imagRounded>p>span {
             color: gold;
         }
 
         .beltSection {
             font-size: 20px;
             width: 100%;
-            background-color: gold  ;  
+            background-color: gold;
             transform: translate(0, 40vh)
+        }
+
+        /* =========================================== */
+
+
+        .header-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logoicone {
+            color: #100f0f;
+        }
+
+        .header-nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .header-nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .header-nav-links a:hover {
+            color: #ffe14d;
+        }
+
+        .btn {
+            background: #ffe14d;
+            color: #0d0d0d;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* Tablette */
+        @media (max-width: 1024px) {
+            .header-navbar {
+                padding: 24px;
+            }
+
+            .header-nav-links {
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+        }
+
+        /* Téléphone */
+        @media (max-width: 767px) {
+            .header-navbar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header-nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header></header>
+    <header class="header-navbar">
+
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
+
+        <ul class="header-nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+
+    </header>
     <main>
         <div class="main">
             <div class="motivationSection">
