@@ -5,31 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
     <style>
         * {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
+            color: white;
         }
-
+        body{
+            background-image: url(images/a1aa074e768b45546adb542b3ac6f2774f956a4c.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
         .main {
+            
             display: flex;
             justify-content: space-between;
             gap: 20vh;
+            margin: 10px;
         }
-
-        .experience {
+        #sidbor{
+            padding-left: 5px;
+            border-left: 1px solid white;
+        }
+        .experience{
+            margin-top: 5%;
             
+        }
+        .experience h1{
+            color: gold;
+        }
+        .motivationSection{
+            transform: translate(0, 10vh);
+        }
+        .motivationSection > div{
+            display: flex;
+            margin-top: 50px;
+        }
+        #star{
+            color: gold;
+        }
+        #motivation{
+            width: 85%;
+            text-transform: uppercase;
+            color: white;
+            height: auto;
+            font-size: 100px;
+        }
+        #motivation>span{
+            color: gold;
+        }
+        .beltSection{
+            margin-top: 20px;
         }
 
         .joinSection {
-            width: 50vh;
-
-
+            transform: translate(-10%, 60vh);
+            font-size: 20px;
+            width: 70%;
         }
-
-        .imagRounded>img {
-            margin-top: 50vh;
+        .joinSection > button{
+            margin: 10px 0 0 0;
+            color: black;
+            background-color: gold;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 10px 30px;
         }
 
         #video {
@@ -39,11 +83,24 @@
         .imagRounded>img {
             height: 40px;
             width: 40px;
+            margin: -6px;
+            border: 1px solid white;
             border-radius: 50%;
         }
+        .imagRounded{
+            margin: 4% 5% 0;
+            padding-left: 10px;
+            border-left: 1px solid white;
+        }
+        .imagRounded >p >span{
+            color: gold;
+        }
 
-        div {
-            border: 2px solid black;
+        .beltSection {
+            font-size: 20px;
+            width: 100%;
+            background-color: gold  ;  
+            transform: translate(0, 40vh)
         }
     </style>
 </head>
@@ -68,8 +125,10 @@
                 </div>
             </div>
             <div class="experience">
-                <p>Our Experience</p>
-                <h1>12+ YEARS</h1>
+                <div id="sidbor">
+                    <p>Our Experience</p>
+                    <h1>12+ YEARS</h1>
+                </div>
 
                 <div class="joinSection">
                     <p>
