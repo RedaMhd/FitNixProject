@@ -26,10 +26,13 @@
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
+            
         }
-        main{
+
+        main {
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         .main {
@@ -135,13 +138,26 @@
             width: 100%;
             height: 30px;
             background-color: gold;
-            /* transform: translate(0, 40vh); */
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        @keyframes beltMov {
+        .beltSection>p {
+            animation-name: beltMov;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            word-spacing: 20px;
+        }
 
-            0% {}
+        @keyframes beltMov {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-90%);
+            }
         }
 
         /* =========================================== */
@@ -227,9 +243,6 @@
                 text-align: center;
             }
         }
-        main{
-            display: ;
-        }
     </style>
 </head>
 
@@ -286,15 +299,17 @@
 
         </div>
         <div class="beltSection">
-            strength &#9670
-            cardio &#9670
-            hiit &#9670
-            boxing &#9670
-            mobility &#9670
-            nutrition &#9670
-            coaching &#9670
-            community &#9670
-            strength &#9670
+            <p>
+                strength &#9670
+                cardio &#9670
+                hiit &#9670
+                boxing &#9670
+                mobility &#9670
+                nutrition &#9670
+                coaching &#9670
+                community &#9670
+                strength &#9670
+            </p>
         </div>
     </main>
     <footer>
