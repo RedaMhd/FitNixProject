@@ -128,19 +128,21 @@ footer input{
 .saying {
             font-family: "Bebas Neue", sans-serif;
             font-weight: 400;
-            font-size: 84px;
+            font-size: 50px;
             line-height: .95;
             color: #f5f5f5;
             margin-bottom: 28px;
             max-width: 420px;
         }
 
-description{
+.description{
+    
 font-family: 10px;
+color:#dddddd6a ;
 }
 .aboutus-pic{
     width: 460px;
-    height: 542px;
+    height: 520px;
 
 }
 main{
@@ -149,5 +151,16 @@ main{
 }
 .layout{
     display: flex;
-    justify-content: space-between;
+    
+}
+.text{
+   
+    align-content: center;
+}
+.text h1{
+    color:#ffe14d ;
+    font-size: 17px;
+    position: relative;
+    bottom: 10%;
+    
 }
