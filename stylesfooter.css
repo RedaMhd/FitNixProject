@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: "Bebas Neue", sans-serif;
+    font-family:  sans-serif;
 }
 
 footer {
@@ -76,7 +76,7 @@ footer {
       padding: 12px 28px;
       border-radius: 1px;
       text-decoration: none;
-      font-family: "Bebas Neue",sans-serif;
+      font-family: "Bebas Neue",sans-serif; 
       
 
       cursor: pointer;
@@ -143,10 +143,10 @@ font-family: 10px;
     height: 542px;
 
 }
-main{
+/* main{
     display: flex;
     justify-content: center;
-}
+} */
 .layout{
     display: flex;
     justify-content: space-between;

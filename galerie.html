@@ -1,68 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
-    <style>
-        body {}
+    <title>FitNix</title>
 
-        .teamphoto {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="stylesfooter.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .teamphoto img {
-            width: calc(25% - 15px);
-            height: 300px;
-            object-fit: cover;
+       
+
+        .header-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+            background-color: #0d0d0d;
+            margin-top: 0;
+            background-color: #0d0d0d;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logoicone {
+            color: #100f0f;
+        }
+
+        .header-nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .header-nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .header-nav-links a:hover {
+            color: #ffe14d;
+        }
+
+        .btn {
+            background: #ffe14d;
+            color: #0d0d0d;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* Tablette */
+        @media (max-width: 1024px) {
+            .header-navbar {
+                padding: 24px;
+            }
+
+            .header-nav-links {
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+        }
+
+        /* Téléphone */
+        @media (max-width: 767px) {
+            .header-navbar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+                background-color: #0d0d0d;
+            }
+
+            .header-nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* ============================================= */
+
+        .bag-galerie {
+            background-color: #0d0d0d;
+            font-family: "Inter", sans-serif;
+
+        }
+
+        .txt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
         }
 
         .textleft {
-            left: 1100px;
-            position: absolute;
-            top: 70px;
-            font-size: 15px
+            justify-content: flex-end;
+            margin-bottom: 20px;
         }
 
-        body {
-            margin: 50px;
+        .textleft p {
+            width: 400px;
+            color: white;
         }
 
-        h2 {
-            position: absolute;
-            top: 600px;
+        h1,
+        p {
+            color: #ffe14d;
+        }
+
+
+
+
+
+        #section-gal {
+            max-width: 1500px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .photos {
+            display: flex;
+            gap: 15px;
+        }
+
+        .photos img {
+            width: 300px;
+            transition:  0.3s; 
 
         }
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+
+        .carousel {
+            overflow-x: scroll;
+        }
+
+
+
+        .galerie-low {
+            color: #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #202020;
+            padding: 20px;
+            margin-top: 30px;
+
+        }
+        .galerie-low  a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            
+            display: flex;
+            background-color: #FFE14D;
+            font-weight: bold;
+            color: #0d0d0d;
+            height: 50px;
+            padding: 20px;
+            border-radius: 10px
+            
+            
+            
+        }
+        .galerie-low a{
+            transition: 0.3s 
+        }
+        .galerie-low a:hover {
+            transform: scale(1.05);
+        }
+
+        
     </style>
 </head>
 
 <body>
-    <section>
-        <div>
-            <p>— GALERIE</p>
-            <h1>NOTRE GALERIE</h1>
+
+    <header class="header-navbar">
+
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
+
+        <ul class="header-nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+
+    </header>
+    <main class="bag-galerie">
+
+
+        <section id="section-gal">
+            <div class="txt">
+                <div>
+                    <p>— GALERIE</p>
+                    <h1>NOTRE GALERIE</h1>
+                </div>
+
+                <div class="textleft">
+                    <p>
+                        Découvrez nos espaces, équipements, activités
+                        et l’ambiance qui font d’Élan Fitness bien
+                        plus qu’une simple salle de sport.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel">
+
+                <div class="photos">
+                    <img src="Images/salle1.jpg" alt="Salle de musculation bleue">
+                    <img src="Images/salle2.jpg" alt="Espace de musculation">
+                    <img src="Images/salle5.jpg" alt="Compléments alimentaires sportifs">
+                    <img src="Images/salle3.jpg" alt="Machines de musculation rouges">
+                    <img src="Images/salle4.jpg" alt="Produits de nutrition sportive">
+                    <img src="Images/salle1.jpg" alt="Salle de musculation bleue">
+                    <img src="Images/salle2.jpg" alt="Espace de musculation">
+                    <img src="Images/salle5.jpg" alt="Compléments alimentaires sportifs">
+                    <img src="Images/salle3.jpg" alt="Machines de musculation rouges">
+                    <img src="Images/salle4.jpg" alt="Produits de nutrition sportive">
+                    <img src="Images/salle1.jpg" alt="Salle de musculation bleue">
+                    <img src="Images/salle2.jpg" alt="Espace de musculation">
+                    <img src="Images/salle5.jpg" alt="Compléments alimentaires sportifs">
+                    <img src="Images/salle3.jpg" alt="Machines de musculation rouges">
+                    <img src="Images/salle4.jpg" alt="Produits de nutrition sportive">
+                </div>
+            </div>
+            <div class="galerie-low">
+                <div class="text-low">
+                    <h2>Prêt à vivre l'expérience Élan Fitness ?</h2>
+                    <p>Réservez votre séance d’essai gratuite dès maintenant.</p>
+                </div>
+
+                <a href="contact.html" class="btn-gal">RÉSERVER MAINTENANT</a>
+            </div>
+
+
+        </section>
+    </main>
+    <footer>
+
+        <div class="upperfoot">
+            <section>
+
+                <div class="logo">
+                    <img src="Images/logo.png" alt="logo picture " class="logoicone">
+                    <h2>FitNix</h2>
+                </div>
+
+                <p>Science-backed training, <br>expert coaching and a community <br>that never lets you quit.</p>
+
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Programs</li>
+                    <li><a href="Trainers.html">Trainers</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hours</h3>
+                <ul>
+                    <li>Mon–Fri · 6am–10pm</li>
+                    <li>Saturday · 7am–9pm</li>
+                    <li>Sunday · 8am–8pm</li>
+                    <li style="color: #FFE14D;">24/7 for Pro & Elite</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <p>Weekly workouts, recipes and member
+                    offers.</p>
+                <input type="email" placeholder="Your email">
+                <button class="lowerbtn">
+                    <b>JOIN</b>
+                </button>
+            </section>
         </div>
-        <p class="textleft"> Découvrez nos espaces, équipements, activités
-            et l’ambiance qui font d’Élan Fitness bien
-            plus qu’une simple salle de sport.</p>
-        <div class="teamphoto">
 
-            <img src="Images/salle1.jpg" alt="Salle de musculation bleue">
+        <img src="Images/fitnix.png" alt="background-footer " class="background-footer">
 
-            <img src="Images/salle2.jpg" alt="Espace de musculation">
-
-            <img src="Images/salle5.jpg" alt="Compléments alimentaires sportifs">
-
-            <img src="Images/salle3.jpg" alt="Machines de musculation rouges">
-
-            <img src="Images/salle4.jpg" alt="Produits de nutrition sportive">
-        </div>
-
-    </section>
-
+        <section class="foot">
+            <p>© 2026 FitNix. All rights reserved.</p>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookies</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>
