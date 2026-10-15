@@ -3,10 +3,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: "Bebas Neue", sans-serif;
+    font-family:  sans-serif;
 }
 
 footer {
+    
     margin-top: auto;
     background-color: #0E0E0E;
     color: white;
@@ -76,7 +77,7 @@ footer {
       padding: 12px 28px;
       border-radius: 1px;
       text-decoration: none;
-      font-family: "Bebas Neue",sans-serif;
+      font-family: "Bebas Neue",sans-serif; 
       
 
       cursor: pointer;
@@ -143,7 +144,14 @@ font-family: 10px;
     height: 542px;
 
 }
+<<<<<<< HEAD
 
+=======
+/* main{
+    display: flex;
+    justify-content: center;
+} */
+>>>>>>> 3a9104764fc21012992bed469ac9fe3b6e116837
 .layout{
     display: flex;
     justify-content: space-between;
