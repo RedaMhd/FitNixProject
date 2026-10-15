@@ -163,7 +163,6 @@ footer {
     top: 0%;
     bottom: 0%;
 }
-<<<<<<< HEAD
 .btn {
       background:white;
       color: #111;
@@ -190,13 +189,11 @@ footer {
 .lowerbtn{
     background-color:#FFE14D ;
    
-=======
 
 .btn,
 b {
     color: #0E0E0E;
     background-color: #FFE14D;
->>>>>>> 3a9104764fc21012992bed469ac9fe3b6e116837
     padding: 12px;
     border-radius: 9px;
 
@@ -204,7 +201,6 @@ b {
 
 
 }
-<<<<<<< HEAD
 
 .nav-links a {
       color: #dddddd6a;
@@ -212,13 +208,11 @@ b {
       font-size: 17px;
       list-style: none;
  }
-=======
 
 .btn:hover {
     transform: scale(1.05);
 
 }
->>>>>>> 3a9104764fc21012992bed469ac9fe3b6e116837
 
 .nav-links a {
     color: #dddddd6a;
@@ -290,12 +284,8 @@ h2 {
     display: flex;
     gap: 45%;
 }
-<<<<<<< HEAD
- #titre  {
-=======
 
 .program #titre {
->>>>>>> 3a9104764fc21012992bed469ac9fe3b6e116837
     color: #FFE14D;
 }
 
