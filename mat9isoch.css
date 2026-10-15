@@ -175,7 +175,7 @@ description {
 }
 
 
-body {
+.bodyBg {
     font-family: "Inter", sans-serif;
     /* background-image: url(images/a1aa074e768b45546adb542b3ac6f2774f956a4c.jpg); */
     background-image: url(images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.jpg);
@@ -443,3 +443,4 @@ main {
         text-align: center;
     }
 }
+
