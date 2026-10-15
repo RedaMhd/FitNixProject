@@ -6,6 +6,7 @@
 }
 
 body {
+    background-color: #0E0E0E;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -365,6 +366,7 @@ main {
 
 .header-navbar {
     display: flex;
+    background-color: black;
     align-items: center;
     justify-content: space-between;
     padding: 28px 64px;
