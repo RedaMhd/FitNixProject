@@ -5,29 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <link rel="stylesheet" href="">
+    <!-- <link rel="stylesheet" href="stylesfooter.css"> -->
+    <link rel="stylesheet" href="mat9isoch.css">
+
+    <!-- <style>
         * {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
+            color: white;
+        }
+
+
+
+        body {
+            font-family: "Inter", sans-serif;
+            /* background-image: url(images/a1aa074e768b45546adb542b3ac6f2774f956a4c.jpg); */
+            background-image: url(images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+        }
+        /* main is not same as .main */
+        main {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .main {
+
             display: flex;
             justify-content: space-between;
             gap: 20vh;
+            max-width: 1300px;
+            margin: auto;
         }
 
-       
+        #sidbor {
+            padding-left: 5px;
+            border-left: 1px solid white;
+        }
+
+        .experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 5%;
+
+        }
+
+        .experience h1 {
+            color: gold;
+        }
+
+        .motivationSection {
+            /* transform: translate(0, 10vh); */
+        }
+
+        .motivationSection>div {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        #star {
+            color: gold;
+        }
+
+        #motivation {
+            width: 85%;
+            text-transform: uppercase;
+            color: white;
+            height: auto;
+            font-size: 100px;
+        }
+
+        #motivation>span {
+            color: gold;
+        }
+
+        .beltSection {
+            margin-top: 20px;
+        }
 
         .joinSection {
-            width: 50vh;
-
-
+            /* transform: translate(-10%, 60vh); */
+            font-size: 18px;
+            width: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        .imagRounded>img {
-            margin-top: 50vh;
+        .joinSection>button {
+            margin: 10px 0 0 0;
+            color: black;
+            border: 0;
+            background-color: gold;
+            font-weight: 800;
+            font-size: 15px;
+            padding: 10px 30px;
         }
 
         #video {
@@ -37,17 +115,159 @@
         .imagRounded>img {
             height: 40px;
             width: 40px;
+            margin: -6px;
+            border: 1px solid white;
             border-radius: 50%;
         }
 
-        div {
-            border: 2px solid black;
+        .imagRounded {
+            margin: 4% 5% 0;
+            padding-left: 10px;
+            border-left: 1px solid white;
         }
-    </style>
+
+        .imagRounded>p {
+            padding: 10px 0;
+        }
+
+        .imagRounded>p>span {
+            color: gold;
+        }
+
+        .beltSection {
+            font-size: 20px;
+            /* width: 100%; */
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            height: 30px;
+            background-color: gold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .beltSection>p {
+            animation-name: beltMov;
+            animation-duration: 22s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: linear;
+            word-spacing: 20px;
+        }
+
+        @keyframes beltMov {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-90%);
+            }
+        }
+
+        /* =========================================== */
+
+
+        .header-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logoicone {
+            color: #100f0f;
+        }
+
+        .header-nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .header-nav-links a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .header-nav-links a:hover {
+            color: #ffe14d;
+        }
+
+        .btn {
+            background: #ffe14d;
+            color: #0d0d0d;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* Tablette */
+        @media (max-width: 1024px) {
+            .header-navbar {
+                padding: 24px;
+            }
+
+            .header-nav-links {
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+        }
+
+        /* Téléphone */
+        @media (max-width: 767px) {
+            .header-navbar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .header-nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .header-nav-links a {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style> -->
 </head>
 
 <body>
-    <header></header>
+    <header class="header-navbar">
+
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
+
+        <ul class="header-nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+
+    </header>
     <main>
         <div class="main">
             <div class="motivationSection">
@@ -55,7 +275,8 @@
                 <h1 id="motivation">Trasform your mind & <span>muscls</span></h1>
                 <div>
                     <!-- <video src=""></video> -->
-                    <img id="video" src="images/photo-1734630341082-0fec0e10126c.avif" alt="">
+                    <img id="video" src="images/ebcd103579ad79e704cf99df2398a69397cd7e0b.jpg" alt="">
+                    <!-- <img src="" alt=""> -->
                     <div class="imagRounded">
                         <img src="images/photo-1605490855119-94921710a47f.avif" alt="">
                         <img src="images/photo-1574680088814-c9e8a10d8a4d.avif" alt="">
@@ -66,8 +287,10 @@
                 </div>
             </div>
             <div class="experience">
-                <p>Our Experience</p>
-                <h1>12+ YEARS</h1>
+                <div id="sidbor">
+                    <p>Our Experience</p>
+                    <h1>12+ YEARS</h1>
+                </div>
 
                 <div class="joinSection">
                     <p>
@@ -80,18 +303,73 @@
 
         </div>
         <div class="beltSection">
-            strength &#9670
-            cardio &#9670
-            hiit &#9670
-            boxing &#9670
-            mobility &#9670
-            nutrition &#9670
-            coaching &#9670
-            community &#9670
-            strength &#9670
+            <p>
+                strength &#9670
+                cardio &#9670
+                hiit &#9670
+                boxing &#9670
+                mobility &#9670
+                nutrition &#9670
+                coaching &#9670
+                community &#9670
+                strength &#9670
+            </p>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+
+        <div class="upperfoot">
+            <section>
+
+                <div class="logo">
+                    <img src="Images/logo.png" alt="logo picture " class="logoicone">
+                    <h2>FitNix</h2>
+                </div>
+
+                <p>Science-backed training, <br>expert coaching and a community <br>that never lets you quit.</p>
+
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Programs</li>
+                    <li><a href="Trainers.html">Trainers</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hours</h3>
+                <ul>
+                    <li>Mon–Fri · 6am–10pm</li>
+                    <li>Saturday · 7am–9pm</li>
+                    <li>Sunday · 8am–8pm</li>
+                    <li style="color: #FFE14D;">24/7 for Pro & Elite</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <p>Weekly workouts, recipes and member
+                    offers.</p>
+                <input type="email" placeholder="Your email">
+                <button class="lowerbtn">
+                    <b>JOIN</b>
+                </button>
+            </section>
+        </div>
+
+        <img src="Images/fitnix.png" alt="background-footer " class="background-footer">
+
+        <section class="foot">
+            <p>© 2026 FitNix. All rights reserved.</p>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookies</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>
