@@ -143,10 +143,7 @@ font-family: 10px;
     height: 542px;
 
 }
-main{
-    display: flex;
-    justify-content: center;
-}
+
 .layout{
     display: flex;
     justify-content: space-between;
