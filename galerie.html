@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="stylesfooter.css">
+    <!-- <link rel="stylesheet" href="stylesfooter.css"> -->
+    <link rel="stylesheet" href="mat9isoch.css">
 
     <style>
         * {
@@ -20,92 +21,7 @@
 
        
 
-        .header-navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 28px 64px;
-            background-color: #0d0d0d;
-            margin-top: 0;
-            background-color: #0d0d0d;
-        }
-
-        .logo {
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .logoicone {
-            color: #100f0f;
-        }
-
-        .header-nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .header-nav-links a {
-            color: #ddd;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .header-nav-links a:hover {
-            color: #ffe14d;
-        }
-
-        .btn {
-            background: #ffe14d;
-            color: #0d0d0d;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-        }
-
-        /* Tablette */
-        @media (max-width: 1024px) {
-            .header-navbar {
-                padding: 24px;
-            }
-
-            .header-nav-links {
-                gap: 15px;
-            }
-
-            .header-nav-links a {
-                font-size: 14px;
-            }
-        }
-
-        /* Téléphone */
-        @media (max-width: 767px) {
-            .header-navbar {
-                flex-direction: column;
-                gap: 20px;
-                padding: 20px;
-                background-color: #0d0d0d;
-            }
-
-            .header-nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 15px;
-            }
-
-            .header-nav-links a {
-                font-size: 14px;
-            }
-
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        /* ============================================= */
+        
 
         .bag-galerie {
             background-color: #0d0d0d;
@@ -140,7 +56,8 @@
 
 
         #section-gal {
-            max-width: 1500px;
+            width: 100%;
+            max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -148,9 +65,11 @@
         .photos {
             display: flex;
             gap: 15px;
+            height: 450px;
         }
 
         .photos img {
+            height: 430px;
             width: 300px;
             transition:  0.3s; 
 
@@ -161,6 +80,7 @@
 
         .carousel {
             overflow-x: scroll;
+            overflow-y: none;
         }
 
 
@@ -198,7 +118,6 @@
             transform: scale(1.05);
         }
 
-        
     </style>
 </head>
 
