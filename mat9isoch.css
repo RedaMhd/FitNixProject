@@ -499,15 +499,6 @@ footer {
     transform: scale(1.05)
 }
 
-@media (max-width: 900px) {
-    .navbar {
-        padding: 20px 24px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-}
 
 .lowerbtn {
     background-color: #FFE14D;
@@ -544,4 +535,67 @@ footer input {
     height: 40px;
     width: 280px;
     border-radius: 10px;
+}
+
+/* Tablette */
+@media (max-width: 900px) {
+    .upperfoot {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .upperfoot section {
+        flex: 1 1 40%;
+    }
+
+    footer input {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .background-footer {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .upperfoot {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .upperfoot section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .background-footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .foot > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 }
