@@ -765,7 +765,7 @@ h1 {
 }
 
 
-.infos {
+.information {
     padding: 0 40px 0 81px;
 }
 
@@ -788,7 +788,7 @@ h1 {
     background: #ffe14d;
 }
 
-.infos h1 {
+.information h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 84px;
@@ -798,7 +798,7 @@ h1 {
     max-width: 420px;
 }
 
-.intro {
+.us {
     color: #9a9a9a;
     font-size: 20px;
     line-height: 1.6;
@@ -840,7 +840,7 @@ h1 {
     border: 0;
 }
 
-.carte {
+.boite {
     background: #0e0e0e;
     padding: 64px 44px 44px;
     width: 100%;
@@ -848,7 +848,7 @@ h1 {
     margin: 0 71px 0 auto;
 }
 
-.titre-form {
+.titre-box {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-size: 34px;
@@ -911,7 +911,7 @@ textarea:focus {
     border-color: #ffe14d;
 }
 
-button {
+.souris {
     height: 55px;
     border: 0;
     border-radius: 2px;
@@ -925,7 +925,7 @@ button {
     transition: background .2s;
 }
 
-button:hover {
+.souris:hover {
     background: #ffd400;
 }
 
@@ -959,7 +959,7 @@ button:hover {
         max-width: 100%;
     }
 
-    .carte {
+    .boite {
         margin: 0 auto;
         padding: 40px 24px;
         max-width: calc(100% - 48px);
