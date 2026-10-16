@@ -651,6 +651,17 @@ h1{
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
 }
+.scrollbtn{
+    width: 200px;
+    height: 60px;
+    border-radius: 6%;
+    background-color: #f4d03f;
+   font-weight: bolder;
+    color: #100f0f;
+    font-size: 20px;
+    margin-bottom: 100%;
+
+}
 
 @media screen and (max-width: 1255px) {
     .team{
