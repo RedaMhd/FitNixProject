@@ -989,6 +989,239 @@ hr {
     margin-bottom: 8px;
 }
 
+.program .tete {
+    padding-top: 10px;
+    color: #CCCCCC;
+    display: flex;
+    gap: 45%;
+}
+
+#titre {
+    color: #FFE14D;
+}
+
+.carte {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.img {
+    flex: 1;
+    min-width: 0;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    color: white;
+    background: linear-gradient(transparent,
+            rgba(0, 0, 0, 0.95));
+}
+
+.info p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.info .time-level {
+    color: #FFE14D;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.tarif {
+    display: block;
+    justify-items: center;
+}
+
+.tarif #titre,
+.tarif .discription,
+.tarif h2,
+.durer,
+.plans {
+    margin-bottom: 15px;
+}
+
+.tarif p,
+ul {
+    color: #CCCCCC;
+    list-style-type: none;
+}
+
+ul span {
+    color: #FFE14D;
+}
+
+.plans {
+    display: flex;
+    gap: 100px;
+}
+
+.starter:hover {
+    background-color: #36311ff9;
+    transition: 1s;
+    transform: scale(1.05)
+}
+
+.pro:hover{
+    background-color: #FFE14D;
+    transition: 1s;
+    transform: scale(1.05)
+
+}
+.pro:hover p,
+.pro:hover h2,
+.pro:hover ul ,
+.pro:hover ul span{
+    color: black;
+    transition: 0s;
+    transform: scale(1.05)
+    
+}
+
+.pro:hover #dolar,
+.pro:hover #prix {
+    color: black;
+}
+
+.Elite:hover {
+    background-color: #36311ff9;
+    transition: 1s;
+    transform: scale(1.05)
+}
+
+.starter,
+.pro,
+.Elite {
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #232222;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 350px;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.durer {
+    border: 1px solid #CCCCCC;
+    border-radius: 30px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.durer .Monthly {
+    color: #0d0d0d;
+    border: 1px solid #FFE14D;
+    border-radius: 30px;
+    background-color: #FFE14D;
+    padding: 5px;
+}
+
+.start {
+    color: #fff;
+    background-color: #0d0d0d;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 250px;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    margin-top: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.start:hover {
+    transition: 1s;
+    transform: scale(1.20)
+}
+
+hr {
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: gray;
+}
+
+#prix {
+    font-size:xx-large;
+    font-weight: bold;
+    color: #FFE14D;
+}
+
+#dolar {
+    color: #FFE14D;
+    font-size: small;
+    font-weight: bold;
+    position: relative;
+    bottom: 15px;
+}
+.Popular{
+    font-size: lage;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius:20px ;
+    background-color:black;
+    padding: 8px; 
+    align-self: end;
+    margin-bottom: 20px;
+
+}
+.Titre{
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+@media (max-width: 890px) {
+    .plans{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .carte{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+    .img{
+        width: 400px;
+        height: 400px;
+    }
+    .img img {
+        width: 100%;
+        height: 100%;   
+        object-fit: cover;
+
+    }
+
+}
+
+
 .me::before {
     content: "";
     width: 35px;
@@ -1425,3 +1658,4 @@ footer input {
         box-sizing: border-box;
     }
 }
+
