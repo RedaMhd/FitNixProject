@@ -110,7 +110,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: "Bebas Neue", sans-serif;
-
+    /* color: white; */
     background-image: url(images/e1becd020e5273b9aedfb2f35d9d00b9e3780aa6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -248,6 +248,7 @@ main {
 
 .beltSection>p {
     animation-name: beltMov;
+    color: white;
     animation-duration: 22s;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -320,20 +321,186 @@ main {
 /* ================================================= */
 /*              galerie style                          */
 /* ================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bag-galerie {
+    background-color: #0d0d0d;
+    font-family: "Inter", sans-serif;
+
+}
+
+#section-gal {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.textleft {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.textleft p {
+    width: 400px;
+    color: white;
+}
+
+h1{
+    color: #ffe14d;
+}
+
+.photos {
+    display: flex;
+    gap: 15px;
+    height: 450px;
+    animation: spin 30s infinite linear;
+}
+
+.photos img {
+    height: 430px;
+    width: 300px;
+    transition: 0.3s;
+
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel:hover .photos {
+    animation-play-state: paused;
+
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2 {
+    color: #FFE14D;
+    margin-bottom: 20px;
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-photos img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-photos img:hover {
+    transform: scale(1.03);
+}
+
+
+.galerie-low {
+    color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+
+.galerie-low a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    background-color: #FFE14D;
+    font-weight: bold;
+    color: #0d0d0d;
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px
+}
+
+.galerie-low a {
+    transition: 0.3s
+}
+
+.galerie-low a:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:720px) {
+    .gallery {
+        color: #FFE14D;
+        margin-bottom: 20px;
+    }
+
+    .gallery-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .galerie-low a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+
+        display: flex;
+        background-color: #FFE14D;
+        font-weight: bold;
+        color: #0d0d0d;
+        height: 50px;
+        padding: 20px;
+        border-radius: 10px;
+
+        width: 100px;
+        font-size: 10px;
+    }
+}
 
 /* 
 
 
  write style ici <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
-
-
-
-
-
 
 
 
@@ -353,8 +520,8 @@ main {
     font-size: 100px;
     line-height: .95;
     color: #f5f5f5;
-   
-    max-width:100%;
+
+    max-width: 100%;
 }
 
 .description {
@@ -365,8 +532,8 @@ main {
 }
 
 .aboutus-pic {
-   width: 50%;
-   height: 30%;
+    width: 50%;
+    height: 30%;
 
 }
 
@@ -374,8 +541,8 @@ main {
 
 .layout {
     display: flex;
-    
-    
+
+
     padding-top: 10%;
 
 }
@@ -394,7 +561,7 @@ main {
 
 .team {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     gap: 30px;
     padding-bottom: 10%;
 }
@@ -405,6 +572,7 @@ main {
     height: 400px;
     object-fit: cover;
 }
+
 .coach:hover {
     transform: scale(1.1);
     transition: 0.5s;
@@ -433,25 +601,29 @@ main {
     align-items: center;
     justify-content: space-between;
 }
-.aboutuscartes > div{
+
+.aboutuscartes>div {
     display: flex;
     gap: 25px;
     justify-content: space-between;
 }
-.aboutuscartes  > a{
+
+.aboutuscartes>a {
     text-decoration: none;
     color: #0E0E0E;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: large;
 }
-.aboutuscartes > button{
+
+.aboutuscartes>button {
 
     width: 60%;
 }
-.aboutuscartes > a:hover{
+
+.aboutuscartes>a:hover {
     transform: scale(1.4);
-     transition: 0.5s;
+    transition: 0.5s;
 
 }
 
@@ -688,7 +860,7 @@ footer input {
     border-radius: 10px;
 }
 
-/* Tablette */
+
 @media (max-width: 900px) {
     .upperfoot {
         flex-wrap: wrap;
@@ -711,42 +883,55 @@ footer input {
     }
 }
 
-/* Mobile */
+
+
+    
 @media (max-width: 600px) {
     .upperfoot {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 30px;
         padding: 20px;
-        margin: 0 auto;
     }
 
     .upperfoot section {
         width: 100%;
-        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
     }
 
-    footer input {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .background-footer {
-        width: 100%;
-        height: auto;
+    .logo {
+        justify-content: center;
     }
 
     .foot {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
         text-align: center;
+        gap: 20px;
         padding: 20px;
     }
 
-    .foot > ul {
+    .foot>ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+    }
+
+    .background-footer {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    footer input {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
     }
 }
