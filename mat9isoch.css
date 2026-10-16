@@ -543,7 +543,6 @@ h1 {
     display: flex;
 
 
-    padding-top: 10%;
 
 }
 
@@ -616,14 +615,11 @@ h1 {
     font-size: large;
 }
 
-.aboutuscartes>button {
 
-    width: 60%;
-}
 
 .aboutuscartes>a:hover {
-    transform: scale(1.4);
-    transition: 0.5s;
+    transform: scale(1.1);
+    transition: 1s;
 
 }
 
@@ -649,6 +645,23 @@ h1 {
     color: #f4d03f;
     font-size: 16px;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+}
+.scrollbtn{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #f4d03f;
+   font-weight: bolder;
+    color: #100f0f;
+    font-size: 20px;
+    margin-bottom: 100%;
+    border: solid black;
+    text-decoration: none;
+    color: #0E0E0E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: large;
 
 }
 
