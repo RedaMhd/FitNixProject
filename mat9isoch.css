@@ -163,10 +163,6 @@ main {
     color: gold;
 }
 
-.motivationSection {
-    /* transform: translate(0, 10vh); */
-}
-
 .motivationSection>div {
     display: flex;
     margin-top: 50px;
@@ -545,9 +541,6 @@ h1 {
 
 
 }
-
-.text {}
-
 
 
 .text h1 {
