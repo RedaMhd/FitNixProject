@@ -176,6 +176,8 @@ footer input {
 
 .text {}
 
+
+
 .text h1 {
     color: #ffe14d;
     font-size: 17px;
@@ -215,9 +217,27 @@ footer input {
 }
 
 .aboutuscartes {
-    padding-top: 30%;
+    padding-top: 10%;
     display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
     justify-content: space-between;
+}
+.aboutuscartes > div{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+.aboutuscartes > button > a{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+.aboutuscartes > button{
+
+    width: 40%;
 }
 
 .layout {
