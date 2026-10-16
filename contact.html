@@ -10,22 +10,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-<link rel="stylesheet" href="stylesfooter.css">
+<link rel="stylesheet" href="mat9isoch.css">
     <style>
         * {
-            box-sizing:  border-box;
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-        body {
+         body {
             font-family: "Inter", sans-serif;
             background-color: #0a0a0a;
             color: #f3eeee;
+        } 
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: #ffe14d;
+            color: #111;
+            border-radius: 8px;
+            display: grid;
+            place-items: center;
+            font-style: italic;
+            font-weight: 900;
+        }
+
+          .nav-lin {
+            display: flex;
+            gap: 48px;
+            list-style: none;
+            font-family: "Inter", sans-serif;
+        }
+
+        .nav-lin a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav-lin a:hover {
+            color: #ffe14d;
+        }  
+
+        .btn {
+            background: #fff;
+            color: #111;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 12px 28px;
+            border-radius: 1px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
         }
 
         .contact {
-
             display: flex;
             align-items: center;
             padding: 40px 0;
@@ -41,6 +104,7 @@
             gap: 40px;
         }
 
+       
         .infos {
             padding: 0 40px 0 81px;
         }
@@ -74,7 +138,7 @@
             max-width: 420px;
         }
 
-        .infos .intro {
+        .intro {
             color: #9a9a9a;
             font-size: 20px;
             line-height: 1.6;
@@ -96,7 +160,7 @@
             font-size: 16px;
         }
 
-        .you .ico {
+        .ico {
             color: #ffe14d;
             font-size: 14px;
             width: 16px;
@@ -107,7 +171,6 @@
             max-width: 500px;
             border: 1px solid #2d2d2d;
             border-radius: 2px;
-
         }
 
         .map iframe {
@@ -115,16 +178,15 @@
             width: 100%;
             height: 200px;
             border: 0;
-
         }
 
+        /* Form (right column) */
         .carte {
             background: #0e0e0e;
             padding: 64px 44px 44px;
             width: 100%;
             max-width: 575px;
-            margin-left: auto;
-            margin-right: 71px;
+            margin: 0 71px 0 auto;
         }
 
         .titre-form {
@@ -142,25 +204,25 @@
         }
 
         label {
+            display: grid;
+            gap: 8px;
             font-size: 14px;
             font-weight: 600;
             color: #d8d3d3;
-            display: grid;
-            gap: 8px;
         }
 
         input,
         select,
         textarea {
             width: 100%;
+            height: 58px;
+            padding: 0 20px;
             font-family: inherit;
             font-size: 15px;
             color: #f3eeee;
             background: #0e0e0e;
             border: 1px solid #2d2d2d;
             border-radius: 2px;
-            padding: 0 20px;
-            height: 58px;
             outline: 0;
             transition: border-color .2s;
         }
@@ -190,7 +252,6 @@
             border-color: #ffe14d;
         }
 
-
         button {
             height: 55px;
             border: 0;
@@ -209,7 +270,21 @@
             background: #ffd400;
         }
 
+        /* ---------- Responsive ---------- */
         @media (max-width: 900px) {
+            .navbar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px 24px;
+                padding: 20px 24px;
+            }
+
+            .navbar .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px 24px;
+            }
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -222,6 +297,10 @@
                 font-size: 64px;
             }
 
+            .map {
+                max-width: 100%;
+            }
+
             .carte {
                 margin: 0 auto;
                 padding: 40px 24px;
@@ -229,95 +308,35 @@
             }
         }
 
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 28px 64px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 28px;
-            font-weight: 700;
-            color: #fff;
-            text-decoration: none;
-            font-family: "Bebas Neue", sans-serif;
-            font-weight: 400;
-        }
-
-        .logo-icon {
-            width: 38px;
-            height: 38px;
-            background: #ffe14d;
-            color: #111;
-            border-radius: 8px;
-            display: grid;
-            place-items: center;
-            font-style: italic;
-            font-weight: 900;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 48px;
-            list-style: none;
-            font-family: "Inter", sans-serif;
-        }
-
-        .nav-links a {
-            color: #ddd;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .nav-links a:hover {
-            color: #ffe14d;
-        }
-
-
-        .btn {
-            background: white;
-            color: #111;
-            font-weight: 700;
-            font-size: 16px;
-            padding: 12px 28px;
-            border-radius: 1px;
-            text-decoration: none;
-            font-family: "Bebas Neue", sans-serif;
-
-
-            cursor: pointer;
-            transition: 0.3s;
-
-        }
-
-        .btn:hover {
-            transform: scale(1.05)
-        }
-
-        @media (max-width: 900px) {
+        @media (max-width: 767px) {
             .navbar {
-                padding: 20px 24px;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
             }
 
-            .nav-links {
-                display: none;
+            .navbar .nav-links {
+                gap: 15px;
+            }
+
+            .navbar .nav-links a {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
-
-        <header class="navbar">
+    <header class="navbar">
             <a href="about.html" class="logo">
                 <span class="logo-icon">F</span>FitNix</a>
 
-            <ul class="nav-links">
+            <ul class="nav-lin">
                 <li><a href="about.html">About</a></li>
                 <li><a href="program.html">Programs</a></li>
                 <li><a href="Trainers.html">Trainers</a></li>
@@ -326,11 +345,8 @@
             </ul>
 
             <a href="contact.html" class="btn">Contact Us</a>
-        </header>
+    </header>
 
-</body>
-
-</header>
 <main class="contact" id="contact">
     <div class="contact-grid">
 
@@ -384,14 +400,14 @@
 
     </div>
 </main>
-</body>
+
 <footer>
 
         <div class="upperfoot">
             <section>
 
                 <div class="logo">
-                    <img src="Images/logo.png" alt="logo picture " class="logoicone">
+                    <img src="Images/logo.png" alt="logo picture" class="logoicone">
                     <h2>FitNix</h2>
                 </div>
 
@@ -402,7 +418,7 @@
                 <h3>Explore</h3>
                 <ul class="nav-links">
                     <li><a href="about.html">About</a></li>
-                    <li><a href="program.html">Programs</li>
+                    <li><a href="program.html">Programs</a></li>
                     <li><a href="Trainers.html">Trainers</a></li>
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="Testimonials.html">Testimonials</a></li>
@@ -414,7 +430,7 @@
                     <li>Mon–Fri · 6am–10pm</li>
                     <li>Saturday · 7am–9pm</li>
                     <li>Sunday · 8am–8pm</li>
-                    <li style="color: #FFE14D;">24/7 for Pro & Elite</li>
+                    <li style="color: #FFE14D;">24/7 for Pro &amp; Elite</li>
                 </ul>
             </section>
             <section>
@@ -428,7 +444,7 @@
             </section>
         </div>
 
-        <img src="Images/fitnix.png" alt="background-footer " class="background-footer">
+        <img src="Images/fitnix.png" alt="background-footer" class="background-footer">
 
         <section class="foot">
             <p>© 2026 FitNix. All rights reserved.</p>
@@ -440,6 +456,5 @@
         </section>
     </footer>
 </body>
-
 
 </html>
