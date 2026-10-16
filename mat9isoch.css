@@ -163,10 +163,6 @@ main {
     color: gold;
 }
 
-.motivationSection {
-    /* transform: translate(0, 10vh); */
-}
-
 .motivationSection>div {
     display: flex;
     margin-top: 50px;
@@ -546,9 +542,6 @@ html{scroll-behavior:smooth;  }
 
 
 }
-
-.text {}
-
 
 
 .text h1 {
@@ -969,8 +962,9 @@ hr {
 @media screen and (max-width: 906px) {
     .cartee{
         width: auto;
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: inline;
     }
 }
 
@@ -991,25 +985,31 @@ hr {
         display: flex;
         flex-direction: column;
         width: 85%;
+        justify-self: center;
         text-align: center;
     }
     .cartee{
         display: flex;
+
         flex-direction: column;
         justify-content: space-between;
-        text-align: start; 
+        text-align: center; 
     }
-    .img{
-        width: 100%;
+    .img-programmes{
+        border-bottom: 6px solid gold;
+        border-radius: 3%;
+        width: 70%;
         height: 100%;
+        padding-bottom: 20%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        margin: auto;
     }
-    .img> img{
-        width: 15em;
+    .img-programmes> img{
+        width: 20em;
         height: auto;
-        align-self: flex-end;
+        align-self: center;
         object-fit: cover;
 
     } 
