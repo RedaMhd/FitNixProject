@@ -176,6 +176,8 @@ footer input {
 
 .text {}
 
+
+
 .text h1 {
     color: #ffe14d;
     font-size: 17px;
@@ -192,10 +194,14 @@ footer input {
 }
 
 .coach img {
-    border-radius: 1%;
+    border-radius: 3%;
     width: 300px;
     height: 400px;
     object-fit: cover;
+}
+.coach:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .text2 {
@@ -215,10 +221,35 @@ footer input {
 }
 
 .aboutuscartes {
-    padding-top: 30%;
+    padding-top: 10%;
     display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
     justify-content: space-between;
 }
+.aboutuscartes > div{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+.aboutuscartes > button > a{
+    text-decoration: none;
+    color: #0E0E0E;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+.aboutuscartes > button{
+
+    width: 40%;
+}
+.aboutuscartes > button:hover{
+    transform: scale(1.1);
+     transition: 0.5s;
+
+}
+
 
 .layout {
     display: flex;
