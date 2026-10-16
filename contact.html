@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contactez l'équipe FITNIX">
     <title>Contact – FITNIX</title>
-    
-<link rel="stylesheet" href="mat9isoch.css">
+
+    <link rel="stylesheet" href="mat9isoch.css">
     <style>
-        * {
+        /* * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -66,9 +66,28 @@
 
         .nav-lin a:hover {
             color: #ffe14d;
-        }  
+        }   */
 
-        .btn {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        /* .btn {
             background: #fff;
             color: #111;
             font-family: "Bebas Neue", sans-serif;
@@ -101,7 +120,7 @@
             gap: 40px;
         }
 
-       
+
         .infos {
             padding: 0 40px 0 81px;
         }
@@ -177,7 +196,6 @@
             border: 0;
         }
 
-        /* Form (right column) */
         .carte {
             background: #0e0e0e;
             padding: 64px 44px 44px;
@@ -267,7 +285,6 @@
             background: #ffd400;
         }
 
-        /* ---------- Responsive ---------- */
         @media (max-width: 900px) {
             .navbar {
                 flex-wrap: wrap;
@@ -324,81 +341,156 @@
                 width: 100%;
                 text-align: center;
             }
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <header class="navbar">
-            <a href="about.html" class="logo">
-                <span class="logo-icon">F</span>FitNix</a>
+    <!-- <header class="header-navbar">
 
-            <ul class="nav-lin">
-                <li><a href="acceuil.html">acceuil</a></li>
-                <li><a href="program.html">Programs</a></li>
-                <li><a href="Galerie.html">Galerie</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
 
-            <a href="contact.html" class="btn">Contact Us</a>
+        <ul class="header-nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="program.html">Programs</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+
+    </header> -->
+    <header class="header-navbar">
+
+        <a href="about.html" class="logo">
+            <span class="logoicone">F</span>FitNix
+        </a>
+
+        <ul class="header-nav-links">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="Program.html">Programs</a></li>
+            <li><a href="Galerie.html">Galerie</a></li>
+            <li><a href="About.html">About us</a></li>
+            <!-- <li><a href="Contact.html">Contact us</a></li> -->
+        </ul>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+
     </header>
 
-<main class="contact" id="contact">
-    <div class="contact-grid">
 
-        <div class="infos">
-            <p class="me">Contactez-nous</p>
-            <h1>Une question ?<br>Écrivez-nous</h1>
-            <p class="intro">Notre équipe vous répond sous 24 h ouvrées.</p>
+    <main class="contact" id="contact">
+        <div class="contact-grid">
 
-            <ul class="you">
-                <li><span class="ico">⚲</span> 128 Iron Street, Downtown</li>
-                <li><span class="ico">◉</span> +1 (555) 014-2290</li>
-                <li><span class="ico">✉</span> hello@fitnix.com</li>
-            </ul>
+            <div class="information">
+                <p class="me">Contactez-nous</p>
+                <h1>Une question ?<br>Écrivez-nous</h1>
+                <p class="us">Notre équipe vous répond sous 24 h ouvrées.</p>
+
+                <ul class="you">
+                    <li><span class="ico">⚲</span> 128 Iron Street, Downtown</li>
+                    <li><span class="ico">◉</span> +1 (555) 014-2290</li>
+                    <li><span class="ico">✉</span> hello@fitnix.com</li>
+                </ul>
 
 
-            <div class="map">
-                <iframe title="Localisation de FITNIX" loading="lazy"
-                    src="https://maps.google.com/maps?q=32.2645962,-9.2372633&z=16&output=embed"></iframe>
+                <div class="map">
+                    <iframe title="Localisation de FITNIX" loading="lazy"
+                        src="https://maps.google.com/maps?q=32.2645962,-9.2372633&z=16&output=embed"></iframe>
+                </div>
             </div>
+
+            <section class="boite">
+                <h2 class="titre-box">Envoyez-nous un message</h2>
+
+                <form action="#" method="post">
+                    <label>Nom complet
+                        <input type="text" name="nom" placeholder="Prénom Nom" required minlength="2">
+                    </label>
+
+                    <label>Adresse e-mail
+                        <input type="email" name="email" placeholder="vous@exemple.com" required>
+                    </label>
+
+                    <label>Sujet du message
+                        <select name="sujet" required>
+                            <option value="" disabled selected>Choisissez un sujet</option>
+                            <option>Essai gratuit</option>
+                            <option>Abonnements et tarifs</option>
+                            <option>Coaching</option>
+                            <option>Autre</option>
+                        </select>
+                    </label>
+
+                    <label>Message
+                        <textarea name="message" placeholder="Votre message" required minlength="10"></textarea>
+                    </label>
+
+                    <button class="souris",type="submit">Envoyer</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="upperfoot">
+            <section>
+
+                <div class="logo">
+                    <img src="Images/logo.png" alt="logo picture " class="logoicone">
+                    <h2>FitNix</h2>
+                </div>
+
+                <p>Science-backed training, <br>expert coaching and a community <br>that never lets you quit.</p>
+
+            </section>
+            <section>
+                <h3>Explore</h3>
+                <ul class="nav-links">
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="Program.html">Programs</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hours</h3>
+                <ul>
+                    <li>Mon–Fri · 6am–10pm</li>
+                    <li>Saturday · 7am–9pm</li>
+                    <li>Sunday · 8am–8pm</li>
+                    <li style="color: #FFE14D;">24/7 for Pro & Elite</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Newsletter</h3>
+                <p>Weekly workouts, recipes and member
+                    offers.</p>
+                <input type="email" placeholder="Your email">
+                <button class="lowerbtn">
+                    <b>JOIN</b>
+                </button>
+            </section>
         </div>
 
-        <section class="carte">
-            <h2 class="titre-form">Envoyez-nous un message</h2>
+        <img src="Images/fitnix.png" alt="background-footer " class="background-footer">
 
-            <form action="#" method="post">
-                <label>Nom complet
-                    <input type="text" name="nom" placeholder="Prénom Nom" required minlength="2">
-                </label>
-
-                <label>Adresse e-mail
-                    <input type="email" name="email" placeholder="vous@exemple.com" required>
-                </label>
-
-                <label>Sujet du message
-                    <select name="sujet" required>
-                        <option value="" disabled selected>Choisissez un sujet</option>
-                        <option>Essai gratuit</option>
-                        <option>Abonnements et tarifs</option>
-                        <option>Coaching</option>
-                        <option>Autre</option>
-                    </select>
-                </label>
-
-                <label>Message
-                    <textarea name="message" placeholder="Votre message" required minlength="10"></textarea>
-                </label>
-
-                <button type="submit">Envoyer</button>
-            </form>
+        <section class="foot">
+            <p>© 2026 FitNix. All rights reserved.</p>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>Cookies</li>
+            </ul>
         </section>
-
-    </div>
-</main>
-
-<footer>
+    </footer>
+    <!-- <footer>
 
         <div class="upperfoot">
             <section>
@@ -409,15 +501,15 @@
                 </div>
 
                 <p>Science-backed training, <br>expert coaching and a community <br>that never lets you quit.</p>
-                
+
             </section>
             <section>
                 <h3>Explore</h3>
                 <ul class="nav-links">
-                    <li><a href="acceuil.html">acceuil</a></li>
+                    <li><a href="acceuil.html">Acceuil</a></li>
                     <li><a href="program.html">Programs</a></li>
                     <li><a href="Galerie.html">Galerie</a></li>
-                    <li><a href="about.html">about</a></li>
+                    <li><a href="about.html">About us</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
             </section>
@@ -451,7 +543,9 @@
                 <li>Cookies</li>
             </ul>
         </section>
-    </footer>
+    </footer> -->
+
+
 </body>
 
 </html>
