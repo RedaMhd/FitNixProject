@@ -514,6 +514,7 @@ h1 {
 /* ================================================= */
 /*              aboute style                          */
 /* ================================================= */
+html{scroll-behavior:smooth;  }
 .saying {
     font-family: "Bebas Neue", sans-serif;
     font-weight: bolder;
@@ -571,10 +572,20 @@ h1 {
     height: 400px;
     object-fit: cover;
 }
+.coach{
+    border-radius: 3%;
+}
+.coach p  {
+   padding-left: 1%; 
+   color:#ffd400;
+}
 
 .coach:hover {
     transform: scale(1.1);
     transition: 0.5s;
+   
+    
+
 }
 
 .text2 {
