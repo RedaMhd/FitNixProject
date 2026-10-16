@@ -723,6 +723,9 @@ h1 {
     font-family: "Bebas Neue", sans-serif;
 
 }
+.program p , .tarif p{
+    color: #CCCCCC;
+} 
 
 .program h3,
 h2 {
@@ -746,7 +749,7 @@ h2 {
 .cartee {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     margin-top: 25px;
 }
@@ -946,8 +949,11 @@ hr {
     gap: 65px;
 }
 
+.img:hover{
+    transform: scale(1.06);
+    box-shadow:  0 0 3px #FFE14D;
 
-
+}
 
 @media screen and (max-width: 906px) {
     .cartee{
@@ -1005,6 +1011,7 @@ hr {
     } 
 
 } 
+
 
 
 /* 
