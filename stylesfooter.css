@@ -233,7 +233,7 @@ footer input {
     gap: 25px;
     justify-content: space-between;
 }
-.aboutuscartes > button > a{
+.aboutuscartes  > a{
     text-decoration: none;
     color: #0E0E0E;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -244,7 +244,7 @@ footer input {
 
     width: 40%;
 }
-.aboutuscartes > button:hover{
+.aboutuscartes > a:hover{
     transform: scale(1.1);
      transition: 0.5s;
 
