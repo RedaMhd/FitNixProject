@@ -1,6 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* header footer programme */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -272,7 +279,28 @@ footer input {
 .layout {
     display: flex;
     justify-content: space-between;
+} */
+
+/* PROGRAM */
+body {
+
+    background: #0d0d0d;
+    color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================== */
 
 .program,
 .tarif {
@@ -282,11 +310,9 @@ footer input {
 }
 
 .program h3,
-h2 {
-    color: #ffff;
+.program h2 {
+    color: #fff;
     font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
 }
 
 .program .tete {
@@ -414,7 +440,7 @@ ul span {
 .Elite {
     border: 1px solid gray;
     border-radius: 10px;
-    background-color: #1B1B1B;
+    background-color: #232222;
     width: 250px;
     height: 350px;
     display: flex;
@@ -480,4 +506,20 @@ hr {
     font-weight: bold;
     position: relative;
     bottom: 15px;
+}
+.Popular{
+    font-size: lage;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius:20px ;
+    background-color:black;
+    padding: 8px; 
+    align-self: end;
+    margin-bottom: 20px;
+
+}
+.Titre{
+    display: flex;
+    align-items: center;
+    gap: 65px;
 }
