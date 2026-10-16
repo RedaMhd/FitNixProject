@@ -84,15 +84,15 @@ body {
     .header-nav-links {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 29px;
     }
 
     .header-nav-links a {
-        font-size: 14px;
+        font-size: 165%;
     }
 
     .btn {
-        width: 100%;
+        width: 27%;
         text-align: center;
     }
 }
@@ -357,7 +357,7 @@ main {
     color: white;
 }
 
-h1{
+h1 {
     color: #ffe14d;
 }
 
@@ -671,6 +671,10 @@ h1{
 /*              programe style                          */
 /* ================================================= */
 
+
+
+
+
 /* 
 
 
@@ -694,8 +698,286 @@ h1{
 
 
 
+/* ================================================= */
+/*              contatct style                          */
+/* ================================================= */
+
+.btn {
+    background: #fff;
+    color: #111;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.contact-grid {
+    width: 100%;
+    max-width: 1312px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
 
 
+.infos {
+    padding: 0 40px 0 81px;
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #ffe14d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.me::before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #ffe14d;
+}
+
+.infos h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: .95;
+    color: #f5f5f5;
+    margin-bottom: 28px;
+    max-width: 420px;
+}
+
+.intro {
+    color: #9a9a9a;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 32px;
+}
+
+.you {
+    list-style: none;
+    display: grid;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.you li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.ico {
+    color: #ffe14d;
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+}
+
+.map {
+    max-width: 500px;
+    border: 1px solid #2d2d2d;
+    border-radius: 2px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+
+.carte {
+    background: #0e0e0e;
+    padding: 64px 44px 44px;
+    width: 100%;
+    max-width: 575px;
+    margin: 0 71px 0 auto;
+}
+
+.titre-form {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+
+form {
+    display: grid;
+    gap: 16px;
+}
+
+label {
+    display: grid;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #d8d3d3;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 58px;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #f3eeee;
+    background: #0e0e0e;
+    border: 1px solid #2d2d2d;
+    border-radius: 2px;
+    outline: 0;
+    transition: border-color .2s;
+}
+
+textarea {
+    height: 110px;
+    padding: 18px 20px;
+    resize: vertical;
+}
+
+select {
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #7d7d7d;
+}
+
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ffe14d;
+}
+
+button {
+    height: 55px;
+    border: 0;
+    border-radius: 2px;
+    background: #ffe14d;
+    color: #0a0a0a;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+button:hover {
+    background: #ffd400;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px 24px;
+        padding: 20px 24px;
+    }
+
+    .navbar .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .infos {
+        padding: 0 24px;
+    }
+
+    .infos h1 {
+        font-size: 64px;
+    }
+
+    .map {
+        max-width: 100%;
+    }
+
+    .carte {
+        margin: 0 auto;
+        padding: 40px 24px;
+        max-width: calc(100% - 48px);
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .navbar .nav-links {
+        gap: 15px;
+    }
+
+    .navbar .nav-links a {
+        font-size: 14px;
+    }
+
+    /* .btn {
+        width: 100%;
+        text-align: center;
+    } */
+}
+
+
+
+
+
+/* write style ici
+<<
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 
@@ -856,7 +1138,7 @@ footer input {
 
 
 
-    
+
 @media (max-width: 600px) {
     .upperfoot {
         flex-direction: column;
