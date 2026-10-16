@@ -700,9 +700,12 @@ h1 {
 /*              programe style                          */
 /* ================================================= */
 
-
+.programBody{
+    width: 100%;
+}
 .program,
 .tarif {
+    width: 100%;
     padding: 5%;
     font-family: "Bebas Neue", sans-serif;
 
@@ -907,6 +910,14 @@ hr {
     font-weight: bold;
     position: relative;
     bottom: 15px;
+}
+
+@media screen and (max-width: 879px) {
+    .cartee{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 
